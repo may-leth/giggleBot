@@ -9,7 +9,7 @@ public class FunnyPhrase {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String phrase;
-    private String authors;
+    private String author;
 
     public FunnyPhrase() {
     }
@@ -30,11 +30,11 @@ public class FunnyPhrase {
         this.phrase = phrase;
     }
 
-    public String getAuthors() {
-        return authors;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setAuthors(String authors) {
-        this.authors = authors;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 }

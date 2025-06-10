@@ -6,7 +6,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.swing.text.html.HTML;
 import java.util.List;
 
 @RestController
@@ -35,13 +34,13 @@ public class FunnyPhraseController {
         return new ResponseEntity<FunnyPhrase>(updatePhrase, HttpStatus.CREATED);
     }
 
-    @DeleteMapping("/FunnyPhrases/{id}")
+    @DeleteMapping("/FunnyPhrase/{id}")
     public ResponseEntity<Void> deleteFunnyPhrase(@PathVariable long id){
         funnyPhraseService.deleteFunnyPhrase(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @GetMapping("/FunnyPhrases/{id}")
+    @GetMapping("/FunnyPhrase/{id}")
     public ResponseEntity<FunnyPhrase> getFunnyPhrase(@PathVariable Long id){
         return funnyPhraseService.getFunnyPhrase(id).map(phrase -> new ResponseEntity<>(phrase, HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));

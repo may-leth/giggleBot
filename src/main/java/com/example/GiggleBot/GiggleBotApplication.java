@@ -7,7 +7,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GiggleBotApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GiggleBotApplication.class, args);
-
 	}
-
 }
