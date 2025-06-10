@@ -19,8 +19,9 @@ public class FunnyPhraseService {
         return funnyPhraseRepository.findAll();
     }
 
-    public void addFunnyPhrase(FunnyPhrase funnyPhrase){
+    public FunnyPhrase addFunnyPhrase(FunnyPhrase funnyPhrase){
         funnyPhraseRepository.save(funnyPhrase);
+        return funnyPhrase;
     }
 
     public FunnyPhrase updateFunnyPhrase(long id, FunnyPhrase updatePhrase) {
@@ -35,7 +36,7 @@ public class FunnyPhraseService {
         funnyPhraseRepository.deleteById(id);
     }
 
-    public Optional<FunnyPhrase> findFunnyPhrase(Long id){
+    public Optional<FunnyPhrase> getFunnyPhrase(Long id){
         return funnyPhraseRepository.findById(id);
     }
 }
