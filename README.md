@@ -1,6 +1,6 @@
 # GiggleBot
 
-**GiggleBot** es una API REST creada con Spring Boot que permite gestionar frases graciosas. Soporta operaciones CRUD (crear, leer, actualizar y eliminar) y está diseñada para ser fácilmente ampliable a otros tipos de frases como inspiradoras o *Lorem Ipsum*.
+**GiggleBot** es una API REST creada con Spring Boot que permite gestionar frases graciosas. Soporta operaciones CRUD (crear, leer, actualizar y eliminar) y está diseñada para ser fácilmente ampliable a otros tipos de frases como inspiradoras o de cualquier tipo.
 
 ## Características
 
